@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Banks Townhomes | Lakeview Village, Mississauga | Register for VIP Access</title>
+  <meta name="description" content="South Banks — over 120 waterfront 3-storey townhomes at Lakeview Village, Mississauga by DECO Homes & Opus Homes. Register for VIP pricing and floor plans.">
+  <meta property="og:title" content="South Banks Townhomes | Lakeview Village, Mississauga">
+  <meta property="og:description" content="Waterfront townhomes at Mississauga's most ambitious lakeside community. Register for VIP Platinum Access.">
+  <meta property="og:image" content="https://southbanktowns.ca/wp-content/themes/south-banks/images/south-bank-townhomes-2.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentAgent.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','4093978017293385');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4093978017293385&ev=PageView&noscript=1"/></noscript>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    img { display: block; max-width: 100%; border: 0; }
+    a { text-decoration: none; }
+
+    :root {
+      --charcoal: #1E2A2E;
+      --charcoal-light: #243238;
+      --coastal: #3A8A9A;
+      --coastal-dark: #2E6E7C;
+      --coastal-light: #4DA8BA;
+      --sand: #C4A87C;
+      --sand-dark: #A88D62;
+      --cream: #F7F3EE;
+      --cream-dark: #EDE7DF;
+      --text-dark: #1E2A2E;
+      --text-medium: #4A5A60;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid rgba(30,42,46,0.1);
+      padding: 0 40px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo { height: 34px; width: auto; }
+    .nav-cta {
+      background: var(--coastal);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 11px 24px;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--coastal-dark); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: var(--charcoal) url('https://southbanktowns.ca/wp-content/themes/south-banks/images/south-bank-townhomes-2.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding: 120px 24px 80px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(30,42,46,0.55) 0%, rgba(30,42,46,0.72) 60%, rgba(30,42,46,0.88) 100%);
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 720px; }
+    .hero-badge {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(196,168,124,0.9);
+      border: 1px solid rgba(196,168,124,0.4);
+      padding: 6px 18px;
+      margin-bottom: 28px;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(48px, 8vw, 80px);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--sand);
+    }
+    .hero-tagline {
+      font-size: 16px;
+      color: rgba(255,255,255,0.7);
+      margin: 20px 0 40px;
+      line-height: 1.6;
+    }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--coastal);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 17px 40px;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--coastal-dark); }
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.5);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 17px 40px;
+      border-radius: 2px;
+      transition: border-color 0.2s;
+    }
+    .btn-outline:hover { border-color: #fff; }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--charcoal-light);
+      padding: 32px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+      padding: 16px 48px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--sand);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-top: 6px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 96px 40px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--coastal);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .section-title em { font-style: italic; color: var(--coastal); }
+    .section-body {
+      font-size: 16px;
+      color: var(--text-medium);
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    /* ── ABOUT SPLIT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 60px;
+    }
+    .about-image {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    /* ── FEATURES ── */
+    .features-section { background: var(--cream-dark); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 56px;
+    }
+    .feature-card {
+      background: var(--white);
+      padding: 36px 32px;
+      border-radius: 2px;
+      border-top: 3px solid var(--coastal);
+    }
+    .feature-icon {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--coastal);
+      margin-bottom: 14px;
+    }
+    .feature-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+    }
+    .feature-body {
+      font-size: 14px;
+      color: var(--text-medium);
+      line-height: 1.75;
+    }
+
+    /* ── NEIGHBOURHOOD ── */
+    .neighbourhood-section {
+      background: var(--charcoal) url('https://southbanktowns.ca/wp-content/themes/south-banks/images/south-bank-townhomes-4.jpg') center/cover no-repeat;
+      position: relative;
+      color: #fff;
+    }
+    .neighbourhood-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(30,42,46,0.82);
+    }
+    .neighbourhood-section .section-inner { position: relative; z-index: 1; }
+    .neighbourhood-section .section-title { color: #fff; }
+    .neighbourhood-section .section-body { color: rgba(255,255,255,0.7); }
+    .neighbourhood-section .section-eyebrow { color: var(--sand); }
+    .neigh-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .neigh-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .neigh-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--coastal-light);
+      border-radius: 50%;
+      margin-top: 9px;
+      flex-shrink: 0;
+    }
+    .neigh-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .neigh-body { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+    /* ── FORM SECTION ── */
+    .form-section { background: var(--charcoal); }
+    .form-section .section-eyebrow { color: var(--sand); }
+    .form-section .section-title { color: #fff; }
+    .form-section .section-body { color: rgba(255,255,255,0.65); }
+    .form-wrapper {
+      background: var(--charcoal-light);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 2px;
+      padding: 52px 48px;
+      max-width: 680px;
+      margin: 52px auto 0;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 2px;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder { color: rgba(255,255,255,0.3); }
+    .form-group input:focus,
+    .form-group select:focus { border-color: var(--coastal); }
+    .form-group select option { background: #243238; color: #fff; }
+    .form-submit {
+      width: 100%;
+      margin-top: 8px;
+      padding: 18px;
+      background: var(--coastal);
+      color: #fff;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--coastal-dark); }
+    .form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+    .form-note {
+      margin-top: 16px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+      line-height: 1.6;
+    }
+    .form-success { display: none; text-align: center; padding: 40px 20px; }
+    .form-success h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .form-success p { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+
+    /* ── BUILDERS ── */
+    .builders-section { background: var(--cream-dark); }
+    .builders-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 56px;
+    }
+    .builder-card {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 2px;
+    }
+    .builder-logo { height: 48px; width: auto; margin-bottom: 24px; }
+    .builder-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+    }
+    .builder-body { font-size: 14px; color: var(--text-medium); line-height: 1.75; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #111c20;
+      padding: 40px;
+      text-align: center;
+    }
+    .footer-logo { height: 32px; margin: 0 auto 20px; opacity: 0.7; }
+    .footer-contact {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 6px;
+    }
+    .footer-contact a { color: rgba(196,168,124,0.7); }
+    .footer-legal {
+      font-size: 11px;
+      color: rgba(255,255,255,0.2);
+      line-height: 1.7;
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+      .nav { padding: 0 20px; }
+      section { padding: 64px 24px; }
+      .about-grid, .features-grid, .neigh-grid, .builders-grid { grid-template-columns: 1fr; gap: 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-wrapper { padding: 36px 24px; }
+      .stat { padding: 12px 24px; }
+      .stats-bar { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <img src="https://southbanktowns.ca/wp-content/themes/south-banks/images/south-bank-black-logo.png" alt="South Banks Townhomes" class="nav-logo">
+    <a href="#register" class="nav-cta">Register for VIP Platinum Access</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Now Registering</div>
+      <p class="hero-eyebrow">DECO &amp; Opus Homes Present</p>
+      <h1 class="hero-title">South<br><em>Banks</em></h1>
+      <p class="hero-tagline">Waterfront Townhomes at Lakeview Village,<br>Mississauga's most ambitious lakeside community.</p>
+      <div class="hero-btns">
+        <a href="#register" class="btn-primary">Register for VIP Platinum Access</a>
+        <a href="#overview" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-num">120+</div><div class="stat-label">Townhomes</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Storeys</div></div>
+    <div class="stat"><div class="stat-num">177</div><div class="stat-label">Acre Community</div></div>
+    <div class="stat"><div class="stat-num">2029</div><div class="stat-label">Est. Occupancy</div></div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <div class="section-inner">
+      <p class="section-eyebrow">The Project</p>
+      <h2 class="section-title">Where the City<br><em>Meets the Shore</em></h2>
+      <p class="section-body">South Banks is an exceptional new collection of pre-construction 3-storey townhomes at Lakeshore Rd E &amp; Hydro Rd in Mississauga's transformative Lakeview Village community. Over 120 spacious homes designed for modern waterfront living — steps from the marina, pier, and park.</p>
+      <div class="about-grid">
+        <div>
+          <p class="section-body" style="margin-bottom:24px;">As part of the 177-acre Lakeview Village master plan, South Banks puts you at the heart of one of the GTA's most ambitious waterfront redevelopments — where former industrial lands are becoming a complete lakeside neighbourhood with 8,050 homes, 50+ acres of parks, and a 600-metre pier with retail boardwalk.</p>
+          <p class="section-body">Unit types include 3-bedroom, 3-bedroom plus den, 4-bedroom, and end units. All with private entrances, layered outdoor spaces, floor-to-ceiling windows, EV charging capabilities, and smart home infrastructure.</p>
+        </div>
+        <img src="https://southbanktowns.ca/wp-content/themes/south-banks/images/south-bank-townhomes-1.jpg" alt="South Banks waterfront townhomes at Lakeview Village" class="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">Why South Banks</p>
+      <h2 class="section-title">Built for the Way<br><em>You Live Today</em></h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">Waterfront</div>
+          <h3 class="feature-title">Lake Ontario at Your Door</h3>
+          <p class="feature-body">Direct access to waterfront trails, a 600-metre pier, kayaking, paddleboarding, and the Jim Tovey Conservation Area — all steps from home.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Design</div>
+          <h3 class="feature-title">Contemporary Architecture</h3>
+          <p class="feature-body">Striking 3-storey designs with open-concept layouts, premium finishes, and floor-to-ceiling windows that flood every room with natural light.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Technology</div>
+          <h3 class="feature-title">Smart Home Ready</h3>
+          <p class="feature-body">EV charging capabilities, energy-efficient systems, and smart home infrastructure built into every townhome for modern, sustainable living.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Transit</div>
+          <h3 class="feature-title">25 Minutes to Downtown</h3>
+          <p class="feature-body">Port Credit GO Station nearby with 24-minute express service to Union Station. Pearson Airport in 20 minutes via the QEW.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Community</div>
+          <h3 class="feature-title">$1B+ Master Plan</h3>
+          <p class="feature-body">Lakeview Village benefits from over $1 billion in master-planned infrastructure investment — a complete waterfront community from the ground up.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Investment</div>
+          <h3 class="feature-title">Waterfront Scarcity</h3>
+          <p class="feature-body">Lake Ontario waterfront land in the GTA is finite and increasingly valuable. Owning here is a rare opportunity — 8,050 homes, 20,000 residents, 9,000 jobs planned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEIGHBOURHOOD -->
+  <section class="neighbourhood-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">The Address</p>
+      <h2 class="section-title">Lakeview Village,<br>Mississauga</h2>
+      <p class="section-body">Mississauga's most ambitious waterfront redevelopment — transforming former industrial sites into a vibrant lakeside destination along Lake Ontario.</p>
+      <div class="neigh-grid">
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">Port Credit GO Station</div><div class="neigh-body">5-minute drive, 24-minute express to Union Station</div></div></div>
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">50+ Acres of Parks</div><div class="neigh-body">Promenades, trails, Jim Tovey Conservation Area</div></div></div>
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">Pearson Airport</div><div class="neigh-body">20 minutes via Hwy 427 or the QEW</div></div></div>
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">Port Credit Village</div><div class="neigh-body">Curated dining, boutique shopping, waterfront patios</div></div></div>
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">600-Metre Pier</div><div class="neigh-body">Retail boardwalk, kayaking, paddleboarding at your doorstep</div></div></div>
+        <div class="neigh-item"><div class="neigh-dot"></div><div><div class="neigh-title">Square One</div><div class="neigh-body">15-minute drive for shopping and dining</div></div></div>
+      </div>
+
+      <!-- Map -->
+      <div style="margin-top:52px;border-radius:2px;overflow:hidden;">
+        <iframe src="https://maps.google.com/maps?q=Lakeshore+Rd+E+%26+Hydro+Rd,+Mississauga,+ON+L5E+1E8&output=embed&z=15" width="100%" height="380" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTER FORM -->
+  <section class="form-section" id="register">
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-eyebrow">VIP Platinum Access</p>
+      <h2 class="section-title" style="color:#fff;">Register for Exclusive<br><em style="color:var(--sand);">Pricing &amp; Floor Plans</em></h2>
+      <p class="section-body" style="color:rgba(255,255,255,0.65);margin:0 auto;">Be the first to receive exclusive VIP pricing, floor plan previews, and incentive details before public launch. Registration is free and does not obligate you to purchase.</p>
+    </div>
+
+    <div class="form-wrapper">
+      <form id="regForm">
+        <div class="form-row">
+          <div class="form-group"><label for="fn">First Name *</label><input type="text" id="fn" placeholder="Jane" required></div>
+          <div class="form-group"><label for="ln">Last Name *</label><input type="text" id="ln" placeholder="Smith" required></div>
+        </div>
+        <div class="form-group"><label for="ph">Phone Number</label><input type="tel" id="ph" placeholder="(416) 555-0100"></div>
+        <div class="form-group"><label for="em">Email Address *</label><input type="email" id="em" placeholder="jane@example.com" required></div>
+        <div class="form-group">
+          <label for="rt">Are you a Realtor? *</label>
+          <select id="rt" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">Register for VIP Platinum Access</button>
+        <p class="form-note">By submitting you consent to receive communications about this project. Your information is kept private and will never be shared.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <h3>You're on the VIP List!</h3>
+        <p>We'll be in touch with priority floor plans, pricing, and exclusive incentives reserved for VIP Platinum registrants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILDERS -->
+  <section class="builders-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">The Builders</p>
+      <h2 class="section-title">Built by<br><em>Industry Leaders</em></h2>
+      <div class="builders-grid">
+        <div class="builder-card">
+          <img src="https://southbanktowns.ca/wp-content/themes/south-banks/images/deco-homes-logo.png" alt="DECO Homes" class="builder-logo">
+          <h3 class="builder-name">DECO Homes</h3>
+          <p class="builder-body">An award-winning builder across Ontario, DECO offers a 4,000 sq. ft. Decor Studio with over 1,000 design options. Known for architectural integrity, premium quality, and a commitment to craftsmanship that defines every community they build.</p>
+        </div>
+        <div class="builder-card">
+          <img src="https://southbanktowns.ca/wp-content/themes/south-banks/images/opus-homes-logo.png" alt="Opus Homes" class="builder-logo">
+          <h3 class="builder-name">Opus Homes</h3>
+          <p class="builder-body">Building communities across the GTA from Brampton to Whitby to Aurora, Opus Homes' "Living Refined" promise and Signature Finishes standard deliver exceptional quality in every freehold townhome and detached residence they create.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="https://southbanktowns.ca/wp-content/themes/south-banks/images/south-banks-white-logo.png" alt="South Banks" class="footer-logo">
+    <p class="footer-contact"><a href="tel:6474097653">647-409-7653</a> &nbsp;&bull;&nbsp; <a href="mailto:info@smarterrealestate.ca">info@smarterrealestate.ca</a></p>
+    <p class="footer-legal">We do not represent the builder directly. We represent you. Renderings are artist's imagination only. All information, prices, specifications, floor plans, and incentives are subject to change at any time without notice. E. &amp; O.E. | Jeffrey Villeneuve, Broker | Meta Realty Inc., Brokerage | info@smarterrealestate.ca | (647) 409-7653</p>
+  </footer>
+
+  <script>
+    const HS_PORTAL = '39925421';
+    const HS_FORM   = '06706050-4dff-495d-af46-8cc15335e4f7';
+    const HS_TAGS   = {
+      lifecyclestage: 'lead',
+      contact_tier:   'Tier 6 -Social Media Lead',
+      client_type:    'Preconstruction',
+      project:        'South Bank Towns'
+    };
+
+    document.getElementById('regForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Submitting...'; btn.disabled = true;
+
+      const payload = {
+        fields: [
+          {name: 'firstname',          value: document.getElementById('fn').value.trim()},
+          {name: 'lastname',           value: document.getElementById('ln').value.trim()},
+          {name: 'phone',              value: document.getElementById('ph').value.trim()},
+          {name: 'email',              value: document.getElementById('em').value.trim()},
+          {name: 'are_you_a_realtor_', value: document.getElementById('rt').value},
+          {name: 'lifecyclestage',     value: HS_TAGS.lifecyclestage},
+          {name: 'contact_tier',       value: HS_TAGS.contact_tier},
+          {name: 'client_type',        value: HS_TAGS.client_type},
+          {name: 'project',            value: HS_TAGS.project}
+        ],
+        context: {pageUri: window.location.href, pageName: document.title}
+      };
+
+      try {
+        const res = await fetch(
+          `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL}/${HS_FORM}`,
+          {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)}
+        );
+        if (!res.ok) throw new Error((await res.json()).message || 'Submission failed');
+        if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+        document.getElementById('regForm').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } catch(err) {
+        console.error(err);
+        btn.textContent = 'Something went wrong. Please try again.';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
